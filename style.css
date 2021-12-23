@@ -1,0 +1,31 @@
+body {
+  background-color: rgb(242, 255, 255);
+  text-align: center;
+}
+.head {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(188, 252, 255) 0%,
+    rgb(180, 209, 250) 100.7%
+  );
+  margin-top: 30px;
+  padding: 100px;
+  color: rgb(24, 40, 87);
+}
+h1 {
+  font-family: "Arima Madurai", cursive;
+  font-size: 60px;
+}
+h2,
+h3 {
+  font-family: "Cuprum", sans-serif;
+}
+h3 {
+  font-size: 26px;
+}
+.btn {
+  background: rgb(180, 209, 250);
+  color: white;
+  margin: 40px;
+  font-family: "Varela Round", sans-serif;
+}
