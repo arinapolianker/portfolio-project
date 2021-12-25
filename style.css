@@ -194,10 +194,12 @@ img {
 .container-contact {
   max-width: 50%;
   margin-bottom: 80px;
+  text-align: center;
 }
 .container-contact h1 {
   font-size: 40px;
   color: #266db6;
+  font-family: "Dosis", sans-serif;
 }
 .container-contact a {
   text-decoration: none;
