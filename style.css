@@ -1,6 +1,8 @@
 body {
   background-color: rgb(242, 255, 255);
-  text-align: center;
+}
+.bd-navbar {
+  background-color: #053476;
 }
 .head {
   background: radial-gradient(
@@ -8,9 +10,9 @@ body {
     rgb(188, 252, 255) 0%,
     rgb(180, 209, 250) 100.7%
   );
-  margin-top: 30px;
   padding: 100px;
   color: rgb(24, 40, 87);
+  text-align: center;
 }
 h1 {
   font-family: "Arima Madurai", cursive;
@@ -19,6 +21,8 @@ h1 {
 }
 h2,
 h3 {
+  text-align: center;
+  color: rgb(24, 40, 87);
   font-family: "Poppins", sans-serif;
   font-weight: 800;
 }
@@ -26,7 +30,6 @@ h3 {
   font-size: 26px;
 }
 .btn {
-  background: rgb(179, 210, 255);
   margin: 40px;
   font-family: "Varela Round", sans-serif;
   background-color: transparent;
@@ -92,6 +95,70 @@ img {
   font-family: "Dosis", sans-serif;
   font-size: 20px;
 }
+.bottom {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(7, 121, 222) 0%,
+    rgb(20, 72, 140) 90%
+  );
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+.designed {
+  font-size: 15px;
+  font-family: Verdana, sans-serif;
+}
+.fab {
+  color: white;
+  font-size: 20px;
+  margin: 20px;
+  padding: 10px;
+  background: rgb(12, 48, 94);
+  border-radius: 70px;
+}
+
+#head {
+  text-align: center;
+  margin: 100px;
+  margin-top: 200px;
+  font-family: "Arima Madurai", cursive;
+  background-color: transparent;
+  border: 1px solid #003479;
+  color: #003479;
+  font-size: 70px;
+  font-weight: 700;
+  padding: 10px 5px;
+  position: relative;
+}
+#head:before {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(188, 252, 255) 0%,
+    rgb(180, 209, 250) 100.7%
+  );
+  content: "";
+  height: calc(100% + 1px);
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  width: 100%;
+  z-index: -1;
+}
+.about-me {
+  border: none;
+}
+.about-me h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.about-me a {
+  text-decoration: none;
+  color: #003479;
+}
+.about-me a:hover {
+  font-weight: 800;
+}
 @media (max-width: 1270px) {
   .container {
     max-width: 80%;
@@ -105,6 +172,9 @@ img {
 @media (max-width: 768px) {
   .container {
     text-align: center;
+  }
+  .about-me img {
+    max-width: 60%;
   }
 }
 @media (max-width: 500px) {
@@ -125,5 +195,13 @@ img {
   }
   .container a {
     font-size: 15px;
+  }
+  .fab {
+    margin: 10px;
+  }
+  #head {
+    font-size: 40px;
+    margin: 60px 30px;
+    margin-top: 140px;
   }
 }
