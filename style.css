@@ -152,7 +152,7 @@ img {
 }
 .about-me a {
   text-decoration: none;
-  color: #003479;
+  color: #112977;
 }
 .about-me a:hover {
   font-weight: 800;
@@ -232,6 +232,10 @@ img {
   }
 }
 @media (max-width: 500px) {
+  .head {
+    padding: 70px 30px;
+    padding-top: 140px;
+  }
   h1 {
     font-size: 40px;
   }
@@ -261,8 +265,11 @@ img {
   }
   #head {
     font-size: 40px;
-    margin: 60px 30px;
+    margin: 60px 40px;
     margin-top: 140px;
+  }
+  .about-me a {
+    font-size: 20px;
   }
   .btn-projects {
     max-width: 80%;
