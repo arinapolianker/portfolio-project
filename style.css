@@ -1,8 +1,10 @@
 body {
   background-color: rgb(242, 255, 255);
+  text-align: center;
 }
 .bd-navbar {
   background-color: #053476;
+  text-align: start;
 }
 .head {
   background: radial-gradient(
@@ -14,6 +16,7 @@ body {
   padding-top: 160px;
   color: rgb(24, 40, 87);
   text-align: center;
+  margin-bottom: 40px;
 }
 h1 {
   font-family: "Arima Madurai", cursive;
@@ -30,44 +33,34 @@ h3 {
 h3 {
   font-size: 26px;
 }
-.m-5 {
-  margin: 40px;
-  font-family: "Varela Round", sans-serif;
-  background-color: transparent;
-  border: 1px solid #266db6;
-  box-sizing: border-box;
-  color: #003479;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  padding: 16px 23px;
-  position: relative;
-  touch-action: manipulation;
-}
-.m-5:hover,
-.m-5:active {
-  outline: 0;
-}
-
-.m-5:hover {
-  background-color: transparent;
+.button {
+  font-family: Verdana, sans-serif;
+  font-size: 30px;
+  margin: 40px 0;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: #152f79;
+  border: 2px solid #152f79;
+  border-radius: 30px;
+  box-shadow: #5d76bd 4px 4px 0 0;
   cursor: pointer;
+  padding: 5px 18px;
+  transition: all 400ms ease-in-out;
 }
-
-.m-5:before {
-  background-color: #d5edf6;
-  content: "";
-  height: calc(100% + 3px);
-  position: absolute;
-  right: -7px;
-  top: -9px;
-  transition: background-color 300ms ease-in;
-  width: 100%;
-  z-index: -1;
+.launch {
+  font-size: 20px;
 }
-
-.m-5:hover:before {
-  background-color: #81b8f7;
+.button:hover {
+  color: white;
+  box-shadow: none;
+  background-color: #5d76bd;
+  border: 2px solid #5d76bd;
+}
+.text-center {
+  font-family: "Varela Round", sans-serif;
+  font-size: 30px;
+  color: #003479;
+  margin-top: 40px;
 }
 img {
   max-width: 700px;
@@ -78,19 +71,14 @@ img {
   border: 3px solid white;
   border-radius: 20px;
   padding: 30px;
-  text-align: start;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   max-width: 60%;
 }
-.text-center {
-  font-family: "Varela Round", sans-serif;
-  font-size: 30px;
-  color: #003479;
-}
+
 .mb-5 h1 {
   font-size: 40px;
   font-weight: 300;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 .mb-5 p {
   font-family: "Dosis", sans-serif;
@@ -171,8 +159,8 @@ img {
 }
 
 .btn-projects {
-  display: flex;
   transition: all 200ms ease-in-out;
+  text-align: center;
 }
 .btn-projects:hover {
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
@@ -219,13 +207,6 @@ img {
   border: 2px solid #5d76bd;
 }
 
-@media (min-width: 768px) {
-  .button-74 {
-    min-width: 120px;
-    padding: 0 25px;
-  }
-}
-
 @media (max-width: 1270px) {
   .container {
     max-width: 80%;
@@ -259,6 +240,9 @@ img {
   }
   h3 {
     font-size: 15px;
+  }
+  .button {
+    font-size: 20px;
   }
   .container .btn {
     font-size: 11px;
